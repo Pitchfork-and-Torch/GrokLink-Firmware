@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GrokLink Skill Manifest",
+  "type": "object",
+  "required": ["id", "version", "risk_class", "hw"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_]{2,32}$" },
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "risk_class": {
+      "type": "string",
+      "enum": ["passive_rx", "active_tx", "gpio", "contact", "system"]
+    },
+    "hw": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["subghz", "rfid", "nfc", "ir", "gpio", "ibutton", "uart"]
+      }
+    },
+    "entry": { "type": "string", "enum": ["rules", "fap"] },
+    "has_fap": { "type": "boolean" },
+    "educational": { "type": "boolean" }
+  }
+}

@@ -1,0 +1,11 @@
+{"action": "subghz_rx", "freq_hz": 300000000, "json_meta": {"pulses": 153}}
+{"action": "subghz_rx", "freq_hz": 315000000, "json_meta": {"pulses": 1}}
+{"action": "subghz_rx", "freq_hz": 433920000, "json_meta": {"pulses": 2879}}
+{"action": "subghz_rx", "freq_hz": 433920000, "json_meta": {"pulses": 5578}}
+{"action": "subghz_rx", "freq_hz": 433920000, "json_meta": {"pulses": 5772}}
+{"action": "subghz_rx", "freq_hz": 433920000, "json_meta": {"pulses": 6375}}
+{"action": "subghz_rx", "freq_hz": 433920000, "json_meta": {"pulses": 2938}}
+{"action": "subghz_rx", "freq_hz": 433920000, "json_meta": {"pulses": 3000}}
+{"action": "subghz_rx", "freq_hz": 868350000, "json_meta": {"pulses": 2}}
+{"action": "subghz_rx", "freq_hz": 915000000, "json_meta": {"pulses": 2}}
+{"kind": "audit", "action": "deployment", "result": "allow", "detail": "first_world_signals_survey"}

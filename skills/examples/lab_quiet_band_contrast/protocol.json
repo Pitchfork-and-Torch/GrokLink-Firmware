@@ -1,0 +1,6 @@
+{
+  "type": "heuristic",
+  "freq_hz": 433920000,
+  "notes": "Contrast skill: sample 433.92 vs 315/868 to flag site RF personality. Passive only.",
+  "tx_enabled": false
+}

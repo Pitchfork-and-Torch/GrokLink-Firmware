@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "safety_mode": "strict",
+  "education_banner": true,
+  "autonomy_enabled": true,
+  "tick_ms": 1000,
+  "tx_max_ms": 2000,
+  "tx_cooldown_ms": 5000,
+  "max_missions_per_hour": 12,
+  "fail_closed_on_audit_error": false,
+  "streams": {
+    "audit": true,
+    "mission": true,
+    "raw_rx": false
+  },
+  "notes": "Edit offline. Authorized lab use only."
+}

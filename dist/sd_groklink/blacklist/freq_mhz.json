@@ -1,0 +1,5 @@
+{
+  "description": "TX centers forbidden in this lab policy. Units are Hz.",
+  "banned_centers_hz": [],
+  "comment": "Example: add 433920000 only if you want to FORBID TX there. Empty list bans nothing. RX may still be allowed depending on policy."
+}

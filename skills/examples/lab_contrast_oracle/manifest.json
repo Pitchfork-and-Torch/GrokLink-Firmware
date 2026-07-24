@@ -1,0 +1,10 @@
+﻿{
+  "id": "lab_contrast_oracle",
+  "version": "0.1.0",
+  "description": "Rank hottest lab bands from last survey history",
+  "risk_class": "passive_rx",
+  "hw": ["subghz"],
+  "entry": "rules",
+  "has_fap": false,
+  "educational": true
+}

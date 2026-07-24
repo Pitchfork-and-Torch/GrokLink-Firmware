@@ -1,0 +1,17 @@
+{
+  "params": {
+    "default_duration_ms": 1000,
+    "bands_hz": [300000000, 315000000, 433920000, 868350000, 915000000],
+    "hot_threshold_pulses": 100,
+    "quiet_threshold_pulses": 10
+  },
+  "on_run": [
+    {"op": "log", "message": "lab_band_survey_leisure start (passive 1s windows)"},
+    {"op": "subghz_rx", "freq_hz": 300000000, "duration_ms": 1000},
+    {"op": "subghz_rx", "freq_hz": 315000000, "duration_ms": 1000},
+    {"op": "subghz_rx", "freq_hz": 433920000, "duration_ms": 1000},
+    {"op": "subghz_rx", "freq_hz": 868350000, "duration_ms": 1000},
+    {"op": "subghz_rx", "freq_hz": 915000000, "duration_ms": 1000},
+    {"op": "log", "message": "lab_band_survey_leisure complete - compare pulse counts"}
+  ]
+}

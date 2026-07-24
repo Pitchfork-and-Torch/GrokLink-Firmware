@@ -1,0 +1,10 @@
+{
+  "params": {
+    "default_freq_hz": 433920000,
+    "default_duration_ms": 2000
+  },
+  "on_run": [
+    { "op": "subghz_rx", "freq_hz": 433920000, "duration_ms": 2000 },
+    { "op": "log", "message": "sigint_433_activity_watch sample complete" }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "lab_rf_delta_watch",
+  "version": "0.1.0",
+  "description": "Compare multi-band pulse counts to historical baseline (PC history + short RX)",
+  "risk_class": "passive_rx",
+  "hw": ["subghz"],
+  "entry": "rules",
+  "has_fap": false,
+  "educational": true,
+  "notes": "Use bridge: groklink hw spectrum --history path/to/rf_history.jsonl"
+}

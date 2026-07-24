@@ -1,0 +1,11 @@
+# CLI is provided by services/grok_agent cli_groklink plugin on Momentum.
+# This file kept for official-firmware overlays that prefer STARTUP registration.
+App(
+    appid="groklink_cli_legacy",
+    name="GrokLink CLI legacy",
+    apptype=FlipperAppType.STARTUP,
+    entry_point="groklink_cli_on_system_start",
+    requires=["cli"],
+    order=70,
+    sources=["groklink_cli_start.c", "groklink_cli.c"],
+)

@@ -1,0 +1,26 @@
+{
+  "id": "ops_port_and_promo_lessons",
+  "version": "0.1.0",
+  "description": "Auto-crafted from full_explore_synth.jsonl",
+  "risk_class": "passive_rx",
+  "hw": [
+    "subghz"
+  ],
+  "entry": "rules",
+  "has_fap": false,
+  "educational": true,
+  "source_log": "full_explore_synth.jsonl",
+  "analysis": {
+    "event_count": 6,
+    "pulse_total": 6001,
+    "dominant_freq_hz": 433920000,
+    "action_hist": {
+      "subghz_rx": 3,
+      "subghz_tx": 1,
+      "promo": 1,
+      "status": 1
+    },
+    "suggested_risk": "passive_rx"
+  },
+  "llm_notes": "Lessons: exclusive USB serial ownership; short RX; promos on GitHub Releases not git; 433 dominant site personality."
+}

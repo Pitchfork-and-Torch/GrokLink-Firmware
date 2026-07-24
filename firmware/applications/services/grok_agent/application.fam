@@ -1,0 +1,18 @@
+App(
+    appid="grok_agent",
+    name="GrokAgent",
+    apptype=FlipperAppType.SERVICE,
+    entry_point="grok_agent_app",
+    cdefines=["GROK_AGENT_SERVICE", "GROKLINK_USE_FURI"],
+    requires=[
+        "storage",
+        "cli",
+    ],
+    stack_size=8 * 1024,
+    order=65,
+    sources=[
+        "grok_agent.c",
+        "grok_cli.c",
+        "grok_rpc.c",
+    ],
+)

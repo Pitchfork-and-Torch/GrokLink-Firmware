@@ -1,0 +1,58 @@
+{
+  "id": "fac_rf_snapshot_passive",
+  "name": "Facility passive RF snapshot",
+  "version": 1,
+  "autonomous": false,
+  "schedule": {
+    "type": "interval",
+    "every_sec": 3600,
+    "window_start": "00:00",
+    "window_end": "23:59"
+  },
+  "safety": {
+    "max_risk_class": "passive_rx",
+    "require_confirm": false
+  },
+  "steps": [
+    {
+      "op": "log",
+      "message": "fac_rf_snapshot_passive start - not a medical device"
+    },
+    {
+      "op": "subghz_rx",
+      "freq_hz": 315000000,
+      "duration_ms": 1000,
+      "modulation": "auto"
+    },
+    {
+      "op": "delay",
+      "ms": 2000
+    },
+    {
+      "op": "subghz_rx",
+      "freq_hz": 433920000,
+      "duration_ms": 1000,
+      "modulation": "auto"
+    },
+    {
+      "op": "delay",
+      "ms": 2000
+    },
+    {
+      "op": "subghz_rx",
+      "freq_hz": 868350000,
+      "duration_ms": 1000,
+      "modulation": "auto"
+    },
+    {
+      "op": "decision",
+      "if": { "metric": "subghz_pulse_count", "gte": 10 },
+      "then": [{ "op": "log", "message": "activity noted - investigate offline" }],
+      "else": [{ "op": "log", "message": "quiet or floor" }]
+    },
+    {
+      "op": "log",
+      "message": "fac_rf_snapshot_passive complete"
+    }
+  ]
+}

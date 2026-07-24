@@ -1,0 +1,11 @@
+{
+  "id": "lab_pulse_counter",
+  "version": "1.0.0",
+  "description": "Passive sub-GHz pulse counter for lab characterization",
+  "risk_class": "passive_rx",
+  "hw": ["subghz"],
+  "entry": "rules",
+  "has_fap": false,
+  "author": "GrokLink",
+  "educational": true
+}
