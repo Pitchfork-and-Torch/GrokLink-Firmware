@@ -1,0 +1,25 @@
+{
+  "id": "lab_band_survey_leisure",
+  "version": "0.1.0",
+  "description": "Passive multi-band SubGHz survey from leisure explore (1s windows)",
+  "risk_class": "passive_rx",
+  "hw": ["subghz"],
+  "entry": "rules",
+  "has_fap": false,
+  "educational": true,
+  "source_log": "leisure_explore_public.jsonl",
+  "analysis": {
+    "event_count": 27,
+    "pulse_samples": {
+      "300000000": 780,
+      "315000000": 41,
+      "433920000_series": [199, 269, 188, 169, 317, 233],
+      "868350000": 2,
+      "915000000": 2
+    },
+    "dominant_freq_hz": 433920000,
+    "surprise_freq_hz": 300000000,
+    "suggested_risk": "passive_rx"
+  },
+  "llm_notes": "Leisure explore: multi-band 1s RX. 300 MHz unexpectedly dense (780 edges); 433.92 MHz consistently active (169-317/s); 315 moderate; 868/915 near-quiet (2). TX gate path verified: confirm_needed then token then missing .sub fails closed. skill_list fixed (pretty-print version parse + bridge lenient JSON). Passive only."
+}

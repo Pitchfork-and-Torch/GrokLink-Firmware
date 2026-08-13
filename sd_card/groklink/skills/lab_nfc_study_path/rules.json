@@ -1,0 +1,6 @@
+﻿{
+  "params": { "default_duration_ms": 400 },
+  "on_run": [
+    { "op": "log", "message": "lab_nfc_study_path seed - prefer PC bridge workflows" }
+  ]
+}

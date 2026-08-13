@@ -1,0 +1,24 @@
+{
+  "id": "sample_crafted",
+  "version": "0.1.0",
+  "description": "Auto-crafted from sample_capture.jsonl",
+  "risk_class": "passive_rx",
+  "hw": [
+    "subghz"
+  ],
+  "entry": "rules",
+  "has_fap": false,
+  "educational": true,
+  "source_log": "sample_capture.jsonl",
+  "analysis": {
+    "event_count": 3,
+    "pulse_total": 60,
+    "dominant_freq_hz": 433920000,
+    "action_hist": {
+      "mission_done": 1,
+      "subghz_rx": 2
+    },
+    "suggested_risk": "passive_rx"
+  },
+  "llm_notes": ""
+}

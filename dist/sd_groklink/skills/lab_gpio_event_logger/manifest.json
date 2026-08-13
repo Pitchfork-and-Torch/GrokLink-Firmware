@@ -1,0 +1,10 @@
+﻿{
+  "id": "lab_gpio_event_logger",
+  "version": "0.1.0",
+  "description": "GPIO read logger skill seed (confirm for writes)",
+  "risk_class": "passive_rx",
+  "hw": ["subghz"],
+  "entry": "rules",
+  "has_fap": false,
+  "educational": true
+}

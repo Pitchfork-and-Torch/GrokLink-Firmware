@@ -1,0 +1,10 @@
+﻿{
+  "id": "flipper_rf_literacy",
+  "version": "0.1.0",
+  "description": "Progressive RF literacy curriculum for authorized lab learning",
+  "risk_class": "passive_rx",
+  "hw": ["subghz"],
+  "entry": "rules",
+  "has_fap": false,
+  "educational": true
+}
