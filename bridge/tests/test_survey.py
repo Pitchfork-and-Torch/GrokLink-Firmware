@@ -97,3 +97,14 @@ def test_baseline_excludes_sole_survey(tmp_path: Path):
     )
     base = store.baseline_by_freq(exclude_last_n_surveys=1)
     assert base == {433920000: 100.0}
+
+
+def test_load_rows_zero_limit_empty(tmp_path: Path):
+    """limit=0 / negative must return [] (not the full file via rows[-0:])."""
+    store = RfHistoryStore(tmp_path / "rf.jsonl")
+    store.append_sample(433920000, 10)
+    store.append_sample(433920000, 20)
+    assert len(store.load_rows(limit=5000)) == 2
+    assert store.load_rows(limit=0) == []
+    assert store.load_rows(limit=-1) == []
+    assert len(store.load_rows(limit=1)) == 1

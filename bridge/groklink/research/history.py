@@ -45,6 +45,10 @@ class RfHistoryStore:
             f.write(json.dumps(row, ensure_ascii=True) + "\n")
 
     def load_rows(self, limit: int = 5000) -> list[dict[str, Any]]:
+        # limit<=0 must mean "no rows", not "all rows". Python's rows[-0:] is rows[:]
+        # and would silently return the entire history for a zero/negative limit.
+        if limit <= 0:
+            return []
         if not self.path.exists():
             return []
         rows: list[dict[str, Any]] = []
