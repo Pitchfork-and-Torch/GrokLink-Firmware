@@ -1,0 +1,5 @@
+{
+  "description": "Protocol family names forbidden for TX/emulation under local policy",
+  "banned_protocols": [],
+  "comment": "Populate for your engagement rules, e.g. access-control families you are not authorized to test."
+}

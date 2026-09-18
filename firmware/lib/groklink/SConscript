@@ -1,0 +1,33 @@
+Import("env")
+
+env.Append(
+    CPPPATH=[
+        "#/lib/groklink",
+    ],
+    CPPDEFINES=[
+        "GROKLINK_USE_FURI",
+    ],
+)
+
+libenv = env.Clone()
+libenv.ApplyLibFlags()
+
+sources = [
+    "groklink.c",
+    "gl_safety.c",
+    "gl_audit.c",
+    "gl_mission.c",
+    "gl_mission_load.c",
+    "gl_skill.c",
+    "gl_skill_load.c",
+    "gl_hw.c",
+    "gl_features.c",
+    "gl_storage_furi.c",
+    "gl_blacklist.c",
+    "gl_radio.c",
+    "gl_stream.c",
+]
+
+lib = libenv.StaticLibrary("groklink", sources)
+libenv.Install("${LIB_DIST_DIR}", lib)
+Return("lib")
