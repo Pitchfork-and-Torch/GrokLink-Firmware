@@ -1,0 +1,6 @@
+{"action": "status", "agent_running": true, "safety_mode": "strict", "note": "port_contention_observed"}
+{"action": "subghz_rx", "freq_hz": 433920000, "json_meta": {"pulses": 2900}}
+{"action": "subghz_rx", "freq_hz": 433920000, "json_meta": {"pulses": 3100}}
+{"action": "subghz_rx", "freq_hz": 315000000, "json_meta": {"pulses": 1}}
+{"action": "subghz_tx", "result": "confirm_needed"}
+{"action": "promo", "result": "release_assets_web_and_polished"}

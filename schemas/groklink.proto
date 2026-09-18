@@ -1,0 +1,123 @@
+// GrokLink RPC schema (aligned with JSON CLI control plane API 2 / firmware 2.1+)
+// Full protobuf merge into flipperzero-protobuf remains optional; JSON is production path.
+
+syntax = "proto3";
+package groklink;
+
+option java_package = "com.groklink.rpc";
+
+enum RiskClass {
+  RISK_INFO = 0;
+  RISK_PASSIVE_RX = 1;
+  RISK_ACTIVE_TX = 2;
+  RISK_GPIO_OUT = 3;
+  RISK_CONTACT = 4;
+  RISK_SYSTEM = 5;
+}
+
+enum SafetyResult {
+  SAFETY_ALLOW = 0;
+  SAFETY_DENY = 1;
+  SAFETY_CONFIRM_NEEDED = 2;
+  SAFETY_RATE_LIMITED = 3;
+  SAFETY_BLACKLISTED = 4;
+  SAFETY_DEGRADED = 5;
+}
+
+message GrokSessionStart {
+  string client_name = 1;
+  string client_version = 2;
+  string education_ack = 3; // I_WILL_USE_ONLY_AUTHORIZED_TARGETS
+}
+
+message GrokSessionStartResponse {
+  bool ok = 1;
+  string session_id = 2;
+  string agent_version = 3;
+  uint32 api = 4; // 2
+  string safety_mode = 5;
+  repeated string features = 6;
+  bool sd_ok = 7;
+  bool agent_running = 8;
+  uint32 freq_min_hz = 9;
+  uint32 freq_max_hz = 10;
+  uint32 rx_max_ms = 11;
+}
+
+message GrokStatusResponse {
+  bool ok = 1;
+  string firmware_version = 2;
+  string agent_version = 3;
+  uint32 api = 4;
+  bool sd_present = 5;
+  bool agent_running = 6;
+  string safety_mode = 7;
+  uint32 skill_count = 8;
+  uint32 mission_count = 9;
+  string last_audit_hash = 10;
+  string tx_mode = 11; // ack_file | full
+  bool radio_breaker = 12;
+  uint32 radio_faults = 13;
+  uint32 freq_min_hz = 14;
+  uint32 freq_max_hz = 15;
+  uint32 rx_max_ms = 16;
+}
+
+message GrokConfirmRequest {
+  string action = 1;
+  uint32 ttl_sec = 2;
+  string rationale = 3;
+}
+
+message GrokConfirmResponse {
+  bool ok = 1;
+  string confirm_id = 2;
+  uint32 expires_in_sec = 3;
+  string result = 4;
+}
+
+message GrokSubGhzRxRequest {
+  uint32 freq_hz = 1;
+  uint32 duration_ms = 2; // clamped <= 1000 on device
+}
+
+message GrokSubGhzRxResponse {
+  bool ok = 1;
+  SafetyResult safety = 2;
+  uint32 freq_hz = 3;
+  uint32 duration_ms = 4;
+  string json_meta = 5; // {"pulses":N}
+  string message = 6;
+}
+
+message GrokSubGhzTxRequest {
+  string file_path = 1;
+  string confirm_id = 2;
+  uint32 freq_hz = 3;
+}
+
+message GrokSubGhzTxResponse {
+  bool ok = 1;
+  SafetyResult safety = 2;
+  string tx_mode = 3;
+  string message = 4;
+}
+
+message GrokRadioStatusResponse {
+  bool ok = 1;
+  bool breaker_open = 2;
+  uint32 faults = 3;
+  string last_fault = 4;
+}
+
+message GrokStreamEvent {
+  string kind = 1; // subghz_rx_done | subghz_tx_ack | ...
+  uint32 freq_hz = 2;
+  int32 pulses = 3;
+  string mode = 4;
+}
+
+// Methods (JSON): ping, methods, status, session_start, confirm,
+// mission_list, mission_start, mission_reload, skill_list, skill_reload,
+// subghz_rx, subghz_tx, spectrum_scan (disabled), ir_rx, gpio_read, gpio_write,
+// radio_reset, radio_status

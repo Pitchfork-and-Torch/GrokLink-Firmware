@@ -1,0 +1,12 @@
+{
+  "description": "TEMPLATE - protocol family names to forbid for TX/emulation under healthcare-adjacent RoE. Merge selected names into /ext/groklink/blacklist/protocols.json when your firmware/policy path enforces them.",
+  "banned_protocols": [],
+  "suggested_tx_deny_examples": [
+    "life_support_wireless",
+    "implant_programmer",
+    "infusion_pump_rf",
+    "patient_telemetry",
+    "access_control_clinical"
+  ],
+  "comment": "Names are policy labels for engagement scope, not Flipper decoder IDs. Fill with your lab's forbidden families. Default empty = no protocol ban loaded."
+}

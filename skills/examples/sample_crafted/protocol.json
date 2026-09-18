@@ -1,0 +1,6 @@
+{
+  "type": "heuristic",
+  "freq_hz": 433920000,
+  "notes": "Replace with decoder details after Grok analysis. No TX by default.",
+  "tx_enabled": false
+}

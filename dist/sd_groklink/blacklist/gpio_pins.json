@@ -1,0 +1,5 @@
+{
+  "description": "GPIO pins that must never be driven high/low via GrokLink",
+  "banned_pins": [],
+  "comment": "Add pin indices matching Flipper GPIO numbering used by your HAL wrapper."
+}
