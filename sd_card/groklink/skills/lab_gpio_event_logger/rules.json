@@ -1,0 +1,6 @@
+﻿{
+  "params": { "default_duration_ms": 400 },
+  "on_run": [
+    { "op": "log", "message": "lab_gpio_event_logger seed - prefer PC bridge workflows" }
+  ]
+}

@@ -1,0 +1,59 @@
+{"tag": "status", "ok": true, "skill_count": 5, "mission_count": 1, "safety": "strict", "fw": "groklink-1.0.0", "agent": true, "sd": true}
+{"tag": "edu_bad", "ok": false, "err": "edu_ack required: I_WILL_USE_ONLY_AUTHORIZED_TARGETS"}
+{"tag": "edu_ok", "ok": true, "sid": "sfadc07fe", "features": ["missions", "skills", "stream", "safety"], "safety_mode": "strict"}
+{"tag": "unknown_method", "ok": false, "err": "unknown method"}
+{"tag": "skill_list", "ok": true, "n": 5, "ids": ["lab_pulse_counter", "lab_band_survey_leisure", "lab_quiet_band_contrast", "ops_port_and_promo_lessons", "sigint_433_activity_watch"]}
+{"tag": "mission_list", "ok": true, "missions": [{"id": ",   ", "name": ",   ", "autonomous": false}]}
+{"tag": "rx_band", "freq_hz": 0, "ok": true, "safety": "allow", "pulses": 0, "msg": null}
+{"tag": "rx_band", "freq_hz": 1, "ok": true, "safety": "allow", "pulses": 0, "msg": null}
+{"tag": "rx_band", "freq_hz": 100000000, "ok": true, "safety": "allow", "pulses": 0, "msg": null}
+{"tag": "rx_band", "freq_hz": 281000000, "ok": true, "safety": "allow", "pulses": 87, "msg": null}
+{"tag": "rx_band", "freq_hz": 300000000, "ok": true, "safety": "allow", "pulses": 1111, "msg": null}
+{"tag": "rx_band", "freq_hz": 303875000, "ok": true, "safety": "allow", "pulses": 2925, "msg": null}
+{"tag": "rx_band", "freq_hz": 315000000, "ok": true, "safety": "allow", "pulses": 671, "msg": null}
+{"tag": "rx_band", "freq_hz": 318000000, "ok": true, "safety": "allow", "pulses": 739, "msg": null}
+{"tag": "rx_band", "freq_hz": 390000000, "ok": true, "safety": "allow", "pulses": 1405, "msg": null}
+{"tag": "rx_band", "freq_hz": 433000000, "ok": true, "safety": "allow", "pulses": 919, "msg": null}
+{"tag": "rx_band", "freq_hz": 433920000, "ok": true, "safety": "allow", "pulses": 321, "msg": null}
+{"tag": "rx_band", "freq_hz": 434420000, "ok": true, "safety": "allow", "pulses": 2721, "msg": null}
+{"tag": "rx_band", "freq_hz": 868000000, "ok": true, "safety": "allow", "pulses": 2, "msg": null}
+{"tag": "rx_band", "freq_hz": 868350000, "ok": true, "safety": "allow", "pulses": 2, "msg": null}
+{"tag": "rx_band", "freq_hz": 915000000, "ok": true, "safety": "allow", "pulses": 2, "msg": null}
+{"tag": "rx_band", "freq_hz": 925000000, "ok": true, "safety": "allow", "pulses": 2, "msg": null}
+{"tag": "rx_band", "freq_hz": 1000000000, "ok": true, "safety": "allow", "pulses": 0, "msg": null}
+{"tag": "rx_band", "freq_hz": 2400000000, "ok": true, "safety": "allow", "pulses": 0, "msg": null}
+{"tag": "rx_dur", "duration_ms": 0, "ok": true, "pulses": 1, "safety": "allow"}
+{"tag": "rx_dur", "duration_ms": 1, "ok": true, "pulses": 1, "safety": "allow"}
+{"tag": "rx_dur", "duration_ms": 50, "ok": true, "pulses": 33, "safety": "allow"}
+{"tag": "rx_dur", "duration_ms": 100, "ok": true, "pulses": 29, "safety": "allow"}
+{"tag": "rx_dur", "duration_ms": 500, "ok": true, "pulses": 181, "safety": "allow"}
+{"tag": "rx_dur", "duration_ms": 1000, "ok": true, "pulses": 213, "safety": "allow"}
+{"tag": "rx_dur", "duration_ms": 2000, "ok": true, "pulses": 351, "safety": "allow"}
+{"tag": "rx_dur", "duration_ms": 5000, "ok": true, "pulses": 1505, "safety": "allow"}
+{"tag": "rx_433_series", "i": 0, "pulses": 295, "ok": true}
+{"tag": "rx_433_series", "i": 1, "pulses": 210, "ok": true}
+{"tag": "rx_433_series", "i": 2, "pulses": 343, "ok": true}
+{"tag": "rx_433_series", "i": 3, "pulses": 415, "ok": true}
+{"tag": "rx_433_series", "i": 4, "pulses": 243, "ok": true}
+{"tag": "rx_433_series", "i": 5, "pulses": 208, "ok": true}
+{"tag": "rx_433_series", "i": 6, "pulses": 393, "ok": true}
+{"tag": "rx_433_series", "i": 7, "pulses": 191, "ok": true}
+{"tag": "tx_no_confirm", "ok": false, "safety": "confirm_needed", "msg": "confirm token required"}
+{"tag": "tx_bad_confirm", "ok": false, "safety": "confirm_needed", "msg": "confirm token required"}
+{"tag": "confirm_issue", "ok": true, "confirm_id": "c000432eb", "result": "confirm_issued"}
+{"tag": "tx_missing_file", "ok": false, "safety": "allow", "msg": "tx failed"}
+{"tag": "tx_reuse_token", "ok": false, "safety": "confirm_needed", "msg": "confirm token required"}
+{"tag": "confirm_issue2", "ok": true, "confirm_id": "c00043d84"}
+{"tag": "tx_owned_raw", "ok": true, "safety": "allow", "msg": "tx queued"}
+{"tag": "tx_second_or_cooldown", "ok": false, "safety": "deny", "msg": "tx cooldown", "confirm_id": "c000444a0"}
+{"tag": "tx_post_cooldown", "ok": true, "safety": "allow", "msg": "tx queued"}
+{"tag": "mission_missing", "ok": false, "msg": "denied_or_missing"}
+{"tag": "mission_lab_scan", "ok": false, "msg": "denied_or_missing"}
+{"tag": "status_after_mission", "skill_count": 5, "mission_count": 1}
+{"tag": "contrast", "freq_hz": 300000000, "pulses": 1065, "ok": true}
+{"tag": "contrast", "freq_hz": 433920000, "pulses": 361, "ok": true}
+{"tag": "contrast", "freq_hz": 300000000, "pulses": 1157, "ok": true}
+{"tag": "contrast", "freq_hz": 433920000, "pulses": 161, "ok": true}
+{"tag": "contrast", "freq_hz": 315000000, "pulses": 595, "ok": true}
+{"tag": "contrast", "freq_hz": 868350000, "pulses": 2, "ok": true}
+{"tag": "final_status", "ok": true, "skill_count": 5, "safety": "strict", "agent": true}
