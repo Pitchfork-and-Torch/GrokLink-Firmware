@@ -57,6 +57,8 @@ def detect_deltas(
         if base <= 0:
             ratio = None
             flag = "hot" if p > 50 else "normal"
+            if flag == "hot":
+                hot += 1
         else:
             ratio = p / base
             if ratio >= hot_ratio:
