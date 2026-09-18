@@ -73,3 +73,27 @@ def test_delta_hot_without_baseline_count():
     assert rep.bands[0].flag == "hot"
     assert "1 hot" in rep.summary
 
+
+
+def test_baseline_excludes_sole_survey(tmp_path: Path):
+    """One survey with exclude=1 must yield an empty baseline (not self)."""
+    store = RfHistoryStore(tmp_path / "rf.jsonl")
+    store.append_survey(
+        {
+            "samples": [
+                {"freq_hz": 433920000, "pulses": 100, "ok": True, "duration_ms": 400},
+            ]
+        },
+        label="only",
+    )
+    assert store.baseline_by_freq(exclude_last_n_surveys=1) == {}
+    store.append_survey(
+        {
+            "samples": [
+                {"freq_hz": 433920000, "pulses": 400, "ok": True, "duration_ms": 400},
+            ]
+        },
+        label="second",
+    )
+    base = store.baseline_by_freq(exclude_last_n_surveys=1)
+    assert base == {433920000: 100.0}

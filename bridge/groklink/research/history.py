@@ -61,7 +61,10 @@ class RfHistoryStore:
         """Median pulses per freq from historical survey samples (exclude recent)."""
         rows = self.load_rows()
         surveys = [r for r in rows if r.get("kind") == "survey"]
-        if exclude_last_n_surveys > 0 and len(surveys) > exclude_last_n_surveys:
+        # Always drop the trailing N surveys. The old len()>N guard left a lone
+        # survey in the baseline when exclude_last_n_surveys == len(surveys), so
+        # the latest pass compared against itself and hid first-sighting deltas.
+        if exclude_last_n_surveys > 0:
             surveys = surveys[:-exclude_last_n_surveys]
         buckets: dict[int, list[int]] = {}
         for s in surveys:
