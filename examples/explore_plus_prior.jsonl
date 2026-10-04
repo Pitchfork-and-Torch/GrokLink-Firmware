@@ -1,0 +1,7 @@
+{"action": "status", "agent_running": true, "safety_mode": "strict"}
+{"action": "subghz_rx", "freq_hz": 433920000, "json_meta": {"pulses": 2900}}
+{"action": "subghz_rx", "freq_hz": 433920000, "json_meta": {"pulses": 3100}}
+{"action": "subghz_rx", "freq_hz": 315000000, "json_meta": {"pulses": 1}}
+{"action": "subghz_rx", "freq_hz": 868350000, "json_meta": {"pulses": 2}}
+{"kind": "note", "detail": "bridge_json_framing_fixed_brace_balance"}
+{"kind": "note", "detail": "autonomous_missions_disabled_for_stability"}

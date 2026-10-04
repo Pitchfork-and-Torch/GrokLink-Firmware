@@ -1,0 +1,6 @@
+﻿{
+  "params": { "default_duration_ms": 400 },
+  "on_run": [
+    { "op": "log", "message": "ops_sd_deploy seed - prefer PC bridge workflows" }
+  ]
+}

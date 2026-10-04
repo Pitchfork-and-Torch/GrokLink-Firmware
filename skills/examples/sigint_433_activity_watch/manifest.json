@@ -1,0 +1,24 @@
+{
+  "id": "sigint_433_activity_watch",
+  "version": "0.1.0",
+  "description": "Auto-crafted from first_deployment_survey.jsonl",
+  "risk_class": "passive_rx",
+  "hw": [
+    "subghz"
+  ],
+  "entry": "rules",
+  "has_fap": false,
+  "educational": true,
+  "source_log": "first_deployment_survey.jsonl",
+  "analysis": {
+    "event_count": 11,
+    "pulse_total": 26700,
+    "dominant_freq_hz": 433920000,
+    "action_hist": {
+      "deployment": 1,
+      "subghz_rx": 10
+    },
+    "suggested_risk": "passive_rx"
+  },
+  "llm_notes": "First deployment: 433.92 MHz dominant continuous edge activity ~3k pulses/s; 315/868/915 quiet. Passive only. Monitor variance for remotes vs noise floor."
+}

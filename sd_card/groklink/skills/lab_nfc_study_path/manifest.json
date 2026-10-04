@@ -1,0 +1,10 @@
+﻿{
+  "id": "lab_nfc_study_path",
+  "version": "0.1.0",
+  "description": "NFC study via stock apps + GrokLink status/SD sync",
+  "risk_class": "passive_rx",
+  "hw": ["subghz"],
+  "entry": "rules",
+  "has_fap": false,
+  "educational": true
+}

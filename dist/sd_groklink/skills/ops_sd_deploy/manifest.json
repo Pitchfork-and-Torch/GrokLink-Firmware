@@ -1,0 +1,10 @@
+﻿{
+  "id": "ops_sd_deploy",
+  "version": "0.1.0",
+  "description": "SD skill deploy checklist and mirror path ops",
+  "risk_class": "passive_rx",
+  "hw": ["subghz"],
+  "entry": "rules",
+  "has_fap": false,
+  "educational": true
+}

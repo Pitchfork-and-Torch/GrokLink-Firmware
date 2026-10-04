@@ -1,0 +1,6 @@
+{
+  "description": "TEMPLATE - GPIO pins that must never be driven in a healthcare-adjacent bench. Copy selected pins into /ext/groklink/blacklist/gpio_pins.json.",
+  "banned_pins": [],
+  "suggested_deny_examples": [],
+  "comment": "Populate with pins wired to external equipment you must not actuate. Empty = no GPIO ban."
+}

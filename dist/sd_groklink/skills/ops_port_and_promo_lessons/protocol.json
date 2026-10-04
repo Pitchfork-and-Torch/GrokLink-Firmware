@@ -1,0 +1,6 @@
+{
+  "type": "heuristic",
+  "freq_hz": 433920000,
+  "notes": "Lessons: exclusive USB serial ownership; short RX; promos on GitHub Releases not git; 433 dominant site personality.",
+  "tx_enabled": false
+}

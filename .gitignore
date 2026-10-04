@@ -1,0 +1,59 @@
+# Python
+bridge/.venv/
+bridge/**/__pycache__/
+bridge/*.egg-info/
+bridge/dist/
+bridge/build/
+.pytest_cache/
+generated/
+*.pyc
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Firmware build (if nested)
+firmware/**/dist/
+**/.sconsign.dblite
+
+# Local prebuilt binaries (attach DFU to GitHub Releases, not git)
+dist/**/*.elf
+dist/**/*.bin
+dist/**/*.dfu
+dist/**/*.hex
+*.elf
+*.bin
+*.dfu
+*.hex
+!sd_card/**
+
+# Secrets / local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*token*
+secrets/
+
+examples/tx_path_session.jsonl
+
+
+# local debug probes
+bridge/_probe_connect.py
+
+
+bridge/_probe_connect.py
+bridge/_boundary_explore.py
+dist/momentum-f7-C-v2/
+*.elf
+*.dfu
+*.bin
+
+
+bridge/_v2_suite.py
+bridge/_boundary_explore.py
+bridge/_probe_connect.py
+

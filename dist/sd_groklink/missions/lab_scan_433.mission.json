@@ -1,0 +1,35 @@
+{
+  "id": "lab_scan_433",
+  "name": "Lab passive 433.92 MHz scan",
+  "version": 1,
+  "autonomous": false,
+  "schedule": {
+    "type": "interval",
+    "every_sec": 3600,
+    "window_start": "00:00",
+    "window_end": "23:59"
+  },
+  "safety": {
+    "max_risk_class": "passive_rx",
+    "require_confirm": false
+  },
+  "steps": [
+    {
+      "op": "log",
+      "message": "starting lab_scan_433"
+    },
+    {
+      "op": "subghz_rx",
+      "freq_hz": 433920000,
+      "duration_ms": 30000,
+      "modulation": "auto",
+      "save_as": "captures/lab_scan_${ts}.raw"
+    },
+    {
+      "op": "decision",
+      "if": { "metric": "subghz_pulse_count", "gte": 10 },
+      "then": [{ "op": "log", "message": "activity detected" }],
+      "else": [{ "op": "log", "message": "quiet band" }]
+    }
+  ]
+}

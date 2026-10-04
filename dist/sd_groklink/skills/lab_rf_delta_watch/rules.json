@@ -1,0 +1,14 @@
+{
+  "params": {
+    "default_duration_ms": 400,
+    "settle_s": 2.0,
+    "hot_ratio": 2.5,
+    "quiet_ratio": 0.35,
+    "circuit_breaker_failures": 2
+  },
+  "on_run": [
+    {"op": "log", "message": "lab_rf_delta_watch: prefer PC LabBandSurvey, not on-device spectrum_scan"},
+    {"op": "subghz_rx", "freq_hz": 433920000, "duration_ms": 400},
+    {"op": "log", "message": "single-band sample only; full survey is PC-orchestrated"}
+  ]
+}

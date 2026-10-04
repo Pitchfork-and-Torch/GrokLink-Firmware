@@ -1,0 +1,7 @@
+{"method": "subghz_tx", "ok": false, "safety": "confirm_needed", "message": "confirm token required"}
+{"method": "confirm", "ok": true, "safety": null, "message": null}
+{"method": "subghz_tx", "ok": false, "safety": "confirm_needed", "message": "confirm token required"}
+{"method": "confirm", "ok": true, "safety": null, "message": null}
+{"method": "subghz_tx", "ok": false, "safety": "confirm_needed", "message": "confirm token required"}
+{"method": "subghz_tx", "ok": false, "safety": "confirm_needed", "message": "confirm token required"}
+{"method": "status", "ok": true, "safety": null, "message": null}

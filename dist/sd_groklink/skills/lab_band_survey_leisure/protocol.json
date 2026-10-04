@@ -1,0 +1,14 @@
+{
+  "type": "heuristic_band_survey",
+  "tx_enabled": false,
+  "freq_hz": 433920000,
+  "bands_hz": [300000000, 315000000, 433920000, 868350000, 915000000],
+  "notes": "Passive multi-band pulse-edge survey. Leisure session: 300 MHz can be denser than 433.92 at this site; 868/915 near-quiet. Counts are edges not protocol IDs. No TX.",
+  "site_baseline": {
+    "300_mhz": "often dense",
+    "315_mhz": "low-moderate",
+    "433_92_mhz": "consistently active",
+    "868_35_mhz": "near quiet",
+    "915_mhz": "near quiet"
+  }
+}

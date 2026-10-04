@@ -1,0 +1,71 @@
+{"phase": "0", "tag": "status", "ts": 1784692273.960168, "ok": true, "firmware_version": "groklink-2.0.0", "agent_version": "2.0.0", "api": 2, "safety_mode": "strict", "agent_running": true, "sd_present": true, "skill_count": 5, "mission_count": 1, "tx_mode": "ack_file", "freq_min_hz": 281000000, "freq_max_hz": 928000000, "rx_max_ms": 5000}
+{"phase": "0", "tag": "methods", "ts": 1784692274.8761835, "ok": true, "api": 2, "version": "2.0.0", "methods": ["ping", "methods", "status", "session_start", "confirm", "mission_list", "mission_start", "mission_reload", "skill_list", "skill_reload", "subghz_rx", "subghz_tx", "spectrum_scan", "ir_rx", "gpio_read", "gpio_write"]}
+{"phase": "0", "tag": "edu_bad", "ts": 1784692275.7935433, "ok": false, "error": "edu_ack required: I_WILL_USE_ONLY_AUTHORIZED_TARGETS"}
+{"phase": "0", "tag": "edu_ok", "ts": 1784692276.7376015, "ok": true, "session_id": "s8d697915", "features": ["missions", "skills", "stream", "safety", "spectrum", "ir_rx", "gpio"], "api": 2, "agent_version": "2.0.0", "safety_mode": "strict"}
+{"phase": "0", "tag": "skill_list", "ts": 1784692277.6548958, "ok": true, "n": 5, "ids": ["lab_pulse_counter", "lab_band_survey_leisure", "lab_quiet_band_contrast", "ops_port_and_promo_lessons", "sigint_433_activity_watch"], "versions": ["1.0.0", "0.1.0", "0.1.0", "0.1.0", "0.1.0"]}
+{"phase": "0", "tag": "mission_list", "ts": 1784692278.5709484, "ok": true, "missions": [{"id": "lab_scan_433", "name": "Lab passive 433.92 MHz scan", "autonomous": false}]}
+{"phase": "0", "tag": "skill_reload", "ts": 1784692287.8012354, "ok": false, "skill_count": null, "error": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))"}
+{"phase": "0", "tag": "status_after_reload", "ts": 1784692290.7836561, "ok": true, "skill_count": 5, "firmware_version": "groklink-2.0.0"}
+{"phase": "1", "tag": "spectrum_scan", "ts": 1784692301.0796728, "duration_ms": 500, "ok": false, "safety": null, "reported_duration": null, "samples": null, "error": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))"}
+{"phase": "1", "tag": "spectrum_scan", "ts": 1784692313.8693068, "duration_ms": 1000, "ok": false, "safety": null, "reported_duration": null, "samples": null, "error": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))"}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692316.2900453, "freq_hz": 0, "ok": false, "safety": "deny", "message": "freq out of range", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692317.3092346, "freq_hz": 1, "ok": false, "safety": "deny", "message": "freq out of range", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692318.3284578, "freq_hz": 100000000, "ok": false, "safety": "deny", "message": "freq out of range", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692319.348451, "freq_hz": 280000000, "ok": false, "safety": "deny", "message": "freq out of range", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692328.502639, "freq_hz": 281000000, "ok": false, "safety": null, "message": "could not open port 'COM#': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692337.65477, "freq_hz": 281001000, "ok": false, "safety": null, "message": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692348.0591915, "freq_hz": 300000000, "ok": false, "safety": null, "message": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692358.464284, "freq_hz": 303875000, "ok": false, "safety": null, "message": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692368.860943, "freq_hz": 315000000, "ok": false, "safety": null, "message": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692377.114849, "freq_hz": 318000000, "ok": false, "safety": null, "message": "could not open port 'COM#': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692387.5115008, "freq_hz": 390000000, "ok": false, "safety": null, "message": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692395.4140368, "freq_hz": 433000000, "ok": false, "safety": null, "message": "could not open port 'COM#': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692405.8056183, "freq_hz": 433920000, "ok": false, "safety": null, "message": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692414.9521284, "freq_hz": 434420000, "ok": false, "safety": null, "message": "could not open port 'COM#': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692425.3509357, "freq_hz": 868000000, "ok": false, "safety": null, "message": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692434.5008397, "freq_hz": 868350000, "ok": false, "safety": null, "message": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692442.7542362, "freq_hz": 915000000, "ok": false, "safety": null, "message": "could not open port 'COM#': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692453.1419904, "freq_hz": 925000000, "ok": false, "safety": null, "message": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692461.396118, "freq_hz": 927999000, "ok": false, "safety": null, "message": "could not open port 'COM#': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692471.7813814, "freq_hz": 928000000, "ok": false, "safety": null, "message": "ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692473.9985354, "freq_hz": 929000000, "ok": false, "safety": "deny", "message": "freq out of range", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692475.0158758, "freq_hz": 1000000000, "ok": false, "safety": "deny", "message": "freq out of range", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "2", "tag": "rx_freq", "ts": 1784692476.0333142, "freq_hz": 2400000000, "ok": false, "safety": "deny", "message": "freq out of range", "pulses": null, "duration_ms": null, "freq_echo": null}
+{"phase": "3", "tag": "rx_dur", "ts": 1784692487.406368, "requested_ms": 0, "ok": false, "safety": null, "duration_ms": null, "pulses": null, "message": null}
+{"phase": "3", "tag": "rx_dur", "ts": 1784692496.0762246, "requested_ms": 1, "ok": false, "safety": null, "duration_ms": null, "pulses": null, "message": null}
+{"phase": "3", "tag": "rx_dur", "ts": 1784692504.7120087, "requested_ms": 50, "ok": false, "safety": null, "duration_ms": null, "pulses": null, "message": null}
+{"phase": "3", "tag": "rx_dur", "ts": 1784692514.3277564, "requested_ms": 100, "ok": false, "safety": null, "duration_ms": null, "pulses": null, "message": null}
+{"phase": "3", "tag": "rx_dur", "ts": 1784692522.2499962, "requested_ms": 500, "ok": false, "safety": null, "duration_ms": null, "pulses": null, "message": null}
+{"phase": "3", "tag": "rx_dur", "ts": 1784692531.9129014, "requested_ms": 1000, "ok": false, "safety": null, "duration_ms": null, "pulses": null, "message": null}
+{"phase": "3", "tag": "rx_dur", "ts": 1784692545.3169162, "requested_ms": 2000, "ok": false, "safety": null, "duration_ms": null, "pulses": null, "message": null}
+{"phase": "3", "tag": "rx_dur", "ts": 1784692564.728357, "requested_ms": 5000, "ok": false, "safety": null, "duration_ms": null, "pulses": null, "message": null}
+{"phase": "3", "tag": "rx_dur", "ts": 1784692572.6502776, "requested_ms": 6000, "ok": false, "safety": null, "duration_ms": null, "pulses": null, "message": null}
+{"phase": "3", "tag": "rx_dur", "ts": 1784692586.3157988, "requested_ms": 10000, "ok": false, "safety": null, "duration_ms": null, "pulses": null, "message": null}
+{"phase": "3", "tag": "rx_433_series", "ts": 1784692596.339627, "i": 0, "ok": false, "pulses": null}
+{"phase": "3", "tag": "rx_433_series", "ts": 1784692604.6136942, "i": 1, "ok": false, "pulses": null}
+{"phase": "3", "tag": "rx_433_series", "ts": 1784692612.8882992, "i": 2, "ok": false, "pulses": null}
+{"phase": "3", "tag": "rx_433_series", "ts": 1784692622.5496294, "i": 3, "ok": false, "pulses": null}
+{"phase": "3", "tag": "rx_433_series", "ts": 1784692632.5636141, "i": 4, "ok": false, "pulses": null}
+{"phase": "3", "tag": "rx_433_series", "ts": 1784692643.9666953, "i": 5, "ok": false, "pulses": null}
+{"phase": "3", "tag": "rx_433_series", "ts": 1784692652.2416713, "i": 6, "ok": false, "pulses": null}
+{"phase": "3", "tag": "rx_433_series", "ts": 1784692661.9046144, "i": 7, "ok": false, "pulses": null}
+{"phase": "4", "tag": "tx_no_confirm", "ts": 1784692664.167398, "ok": false, "safety": "confirm_needed", "message": "confirm token required", "tx_mode": null}
+{"phase": "4", "tag": "tx_fake_confirm", "ts": 1784692665.1093574, "ok": false, "safety": "confirm_needed", "message": "confirm token required"}
+{"phase": "4", "tag": "confirm_issue", "ts": 1784692666.0570652, "ok": true, "confirm_id": "c00001851", "result": "confirm_issued"}
+{"phase": "4", "tag": "tx_missing_file", "ts": 1784692667.03628, "ok": false, "safety": "allow", "message": "tx failed", "tx_mode": "ack_file"}
+{"phase": "4", "tag": "tx_reuse_token", "ts": 1784692667.980553, "ok": false, "safety": "confirm_needed", "message": "confirm token required"}
+{"phase": "4", "tag": "gpio_write_no_confirm", "ts": 1784692668.9196672, "ok": false, "safety": "confirm_needed", "message": "confirm token required"}
+{"phase": "4", "tag": "ir_rx", "ts": 1784692670.2008526, "ok": true, "safety": "allow", "duration_ms": 300, "error": null}
+{"phase": "4", "tag": "gpio_read", "ts": 1784692671.115788, "ok": false, "pin": 1, "value": 0, "error": null}
+{"phase": "4", "tag": "blacklist_clear_attempt", "ts": 1784692672.0320866, "ok": false, "error": "unknown method"}
+{"phase": "4", "tag": "unknown_method", "ts": 1784692672.9477308, "ok": false, "error": "unknown method"}
+{"phase": "5", "tag": "contrast", "ts": 1784692682.4896452, "freq_hz": 300000000, "ok": false, "pulses": null, "safety": null}
+{"phase": "5", "tag": "contrast", "ts": 1784692692.134124, "freq_hz": 433920000, "ok": false, "pulses": null, "safety": null}
+{"phase": "5", "tag": "contrast", "ts": 1784692702.1306503, "freq_hz": 300000000, "ok": false, "pulses": null, "safety": null}
+{"phase": "5", "tag": "contrast", "ts": 1784692711.7673502, "freq_hz": 433920000, "ok": false, "pulses": null, "safety": null}
+{"phase": "5", "tag": "contrast", "ts": 1784692720.021032, "freq_hz": 315000000, "ok": false, "pulses": null, "safety": null}
+{"phase": "5", "tag": "contrast", "ts": 1784692731.402087, "freq_hz": 868350000, "ok": false, "pulses": null, "safety": null}
+{"phase": "5", "tag": "skill_list_final", "ts": 1784692737.5205555, "ok": true, "ids": ["lab_pulse_counter", "lab_band_survey_leisure", "lab_quiet_band_contrast", "ops_port_and_promo_lessons", "sigint_433_activity_watch"], "versions": ["1.0.0", "0.1.0", "0.1.0", "0.1.0", "0.1.0"]}
+{"phase": "5", "tag": "mission_list_final", "ts": 1784692738.4379177, "ok": true, "missions": [{"id": "lab_scan_433", "name": "Lab passive 433.92 MHz scan", "autonomous": false}]}
+{"phase": "5", "tag": "mission_start", "ts": 1784692739.373926, "mission_id": "lab_scan_433", "ok": true, "message": "started"}
+{"phase": "6", "tag": "final_status", "ts": 1784692740.2900493, "ok": true, "firmware_version": "groklink-2.0.0", "api": 2, "safety_mode": "strict", "skill_count": 5, "mission_count": 1, "agent_running": true, "last_audit_hash": "04503042", "tx_mode": "ack_file"}

@@ -1,0 +1,25 @@
+{
+  "id": "lab_quiet_band_contrast",
+  "version": "0.1.0",
+  "description": "Auto-crafted from explore_plus_prior.jsonl",
+  "risk_class": "passive_rx",
+  "hw": [
+    "subghz"
+  ],
+  "entry": "rules",
+  "has_fap": false,
+  "educational": true,
+  "source_log": "explore_plus_prior.jsonl",
+  "analysis": {
+    "event_count": 7,
+    "pulse_total": 6003,
+    "dominant_freq_hz": 433920000,
+    "action_hist": {
+      "status": 1,
+      "note": 2,
+      "subghz_rx": 4
+    },
+    "suggested_risk": "passive_rx"
+  },
+  "llm_notes": "Contrast skill: sample 433.92 vs 315/868 to flag site RF personality. Passive only."
+}

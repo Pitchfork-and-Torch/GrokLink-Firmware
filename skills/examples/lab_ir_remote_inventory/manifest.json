@@ -1,0 +1,10 @@
+﻿{
+  "id": "lab_ir_remote_inventory",
+  "version": "0.1.0",
+  "description": "IR passive learn workflow for owned remotes only",
+  "risk_class": "passive_rx",
+  "hw": ["subghz"],
+  "entry": "rules",
+  "has_fap": false,
+  "educational": true
+}
